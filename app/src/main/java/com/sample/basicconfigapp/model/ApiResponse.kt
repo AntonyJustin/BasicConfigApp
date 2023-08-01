@@ -1,5 +1,5 @@
 package com.sample.basicconfigapp.model
 
 data class ApiResponse (
-    val list: List<CountryListDetails>
+    val list: List<CountryDetails>
 )

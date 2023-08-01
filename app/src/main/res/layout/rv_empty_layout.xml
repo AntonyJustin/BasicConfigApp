@@ -6,7 +6,7 @@
 
         <variable
             name="data"
-            type="com.sample.basicconfigapp.model.CountryListDetails" />
+            type="com.sample.basicconfigapp.model.CountryDetails" />
 
         <variable
             name="clickHelper"

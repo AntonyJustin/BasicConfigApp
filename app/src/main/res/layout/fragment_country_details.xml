@@ -9,24 +9,17 @@
 
         <import type="android.view.View" />
         <variable
-            name="countryListViewModel"
-            type="com.sample.basicconfigapp.viewmodel.CountryListViewModel" />
+            name="countryDetailsViewModel"
+            type="com.sample.basicconfigapp.viewmodel.CountryDetailsViewModel" />
 
         <variable
             name="fr"
-            type="com.sample.basicconfigapp.view.fragment.CountryListFragment" />
-
-        <variable
-            name="adapter"
-            type="com.sample.basicconfigapp.view.adapters.UniversalRecyclerViewAdapter"/>
+            type="com.sample.basicconfigapp.view.fragment.CountryDetailsFragment" />
 
         <variable
             name="clickHelper"
             type="com.sample.basicconfigapp.utils.callbacks.ClickHelper" />
 
-        <variable
-            name="callBack"
-            type="com.sample.basicconfigapp.utils.callbacks.OnItemClickListener" />
     </data>
 
 
