@@ -10,4 +10,8 @@ class NetworkRepository @Inject constructor(val countriesApi: CountriesApi) {
         return countriesApi.getCountriesList()
     }
 
+    suspend fun getCountryDetails(fullname:String): Response<List<CountryDetails>> {
+        return countriesApi.getCountryDetails(fullname)
+    }
+
 }

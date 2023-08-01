@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.navArgs
+import com.sample.basicconfigapp.api.DataHandler
 import com.sample.basicconfigapp.databinding.FragmentCountryDetailsBinding
 import com.sample.basicconfigapp.model.CountryDetails
 import com.sample.basicconfigapp.viewmodel.CountryDetailsViewModel
@@ -31,7 +32,7 @@ class CountryDetailsFragment: BaseFragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         var toolbar = binding?.toolbarLayout.toolbar
-        toolbar.title = "CountryList"
+        toolbar.title = "CountryDetails"
 
         // Receive the arguments in a variable
         val countryName = args.commonName
@@ -40,7 +41,7 @@ class CountryDetailsFragment: BaseFragment() {
         // set the values to respective textViews
 
 
-        //observeLiveData()
+        observeLiveData()
 
     }
 
@@ -55,26 +56,27 @@ class CountryDetailsFragment: BaseFragment() {
 
     }
 
-//    private fun observeLiveData() {
-//        viewModel.onLineCountries.observe(viewLifecycleOwner) { dataHandler ->
-//            when (dataHandler) {
-//                is DataHandler.SUCCESS -> {
-//                    binding.progressBar.visibility = View.GONE
-//                    var data = dataHandler.data
-//                    dataHandler.data?.let {
-//                        countryAdapter.setData(dataHandler.data)
-//                    }
-//                }
-//                is DataHandler.ERROR -> {
-//                    binding.progressBar.visibility = View.GONE
-//                }
-//                is DataHandler.LOADING -> {
-//                    binding.progressBar.visibility = View.VISIBLE
-//
-//                }
-//            }
-//        }
-//        viewModel.getCountries()
-//    }
+    private fun observeLiveData() {
+        viewModel.onLineCountries.observe(viewLifecycleOwner) { dataHandler ->
+            when (dataHandler) {
+                is DataHandler.SUCCESS -> {
+                    binding.progressBar.visibility = View.GONE
+                    var data = dataHandler.data
+                    dataHandler.data?.let {
+                        //countryAdapter.setData(dataHandler.data)
+                        Log.e("Test","CountryDetails Data Region = ${data?.get(0)?.region} SubRegion = ${data?.get(0)?.subregion}")
+                    }
+                }
+                is DataHandler.ERROR -> {
+                    binding.progressBar.visibility = View.GONE
+                }
+                is DataHandler.LOADING -> {
+                    binding.progressBar.visibility = View.VISIBLE
+
+                }
+            }
+        }
+        viewModel.getCountryDetails("India")
+    }
 
 }

@@ -19,10 +19,10 @@ class CountryDetailsViewModel @Inject constructor(private val application: MyApp
     private val countries = MutableLiveData<DataHandler<List<CountryDetails>>>()
     val onLineCountries:LiveData<DataHandler<List<CountryDetails>>> = countries
 
-    fun getCountries() {
+    fun getCountryDetails(fullName:String) {
         countries.postValue(DataHandler.LOADING())
         viewModelScope.launch {
-            val response = networkRepository.getCountriesList()
+            val response = networkRepository.getCountryDetails(fullName)
             countries.postValue(handleResponse(response))
         }
     }
