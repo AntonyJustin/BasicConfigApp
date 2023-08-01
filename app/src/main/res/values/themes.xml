@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppTheme1" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/indigo</item>
+        <item name="colorPrimaryDark">@color/indigo</item>
+        <item name="colorAccent">@color/indigo</item>
+        <!--        <item name="android:titleTextStyle">@style/MyTheme.ActionBar.TitleTextStyle</item>-->
+        <!--        <item name="android:background">@color/red_light_color</item>-->
+    </style>
+
+</resources>
