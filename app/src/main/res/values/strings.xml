@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">BasicConfigapp</string>
+    <string name="something_wrong">Something Went Wrong</string>
 </resources>

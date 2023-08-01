@@ -7,21 +7,21 @@
 
     <fragment
         android:id="@+id/splashFragment"
-        android:name="com.supertalk.app.view.fragments.SplashFragment"
+        android:name="com.sample.basicconfigapp.view.fragment.SplashFragment"
         android:label="fragment_splash"
         tools:layout="@layout/fragment_splash" >
 
         <action
-            android:id="@+id/action_SplashFragment_to_HomeFragment"
-            app:destination="@id/homeFragment" />
+            android:id="@+id/action_SplashFragment_to_CountryListFragment"
+            app:destination="@id/countryListFragment" />
 
     </fragment>
 
     <fragment
-        android:id="@+id/homeFragment"
-        android:name="com.supertalk.app.view.fragments.HomeFragment"
-        android:label="fragment_home"
-        tools:layout="@layout/fragment_home" >
+        android:id="@+id/countryListFragment"
+        android:name="com.sample.basicconfigapp.view.fragment.CountryListFragment"
+        android:label="fragment_country_list"
+        tools:layout="@layout/fragment_country_list" >
 
     </fragment>
 

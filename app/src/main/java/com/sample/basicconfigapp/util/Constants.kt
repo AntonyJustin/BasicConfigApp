@@ -1,6 +1,0 @@
-package com.sample.basicconfigapp.util
-
-object Constants {
-    val BASE_URL = " https://live.flashdiner.com/api/"
-    val HEADER= "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiIsImp0aSI6IjYxQjhBMzNBMjVEQkFLVkoifQ.eyJpc3MiOiJsaXZlLmZsYXNoZGluZXIuY29tIiwiYXVkIjoibGl2ZS5mbGFzaGRpbmVyLmNvbSIsImp0aSI6IjYxQjhBMzNBMjVEQkFLVkoiLCJpYXQiOjE2ODk5MjMwODIsIm5iZiI6MTY4OTkyMzA4MiwiZXhwIjoxNzIxNDU5MDgyLCJ0b2tlbiI6Im10N25janI1bnM4dWd1bW4ifQ.qkNwVx9GEJi2X1BNl6LTSbNk3BduMf81KarmeNMW2Qs"
-}

@@ -25,6 +25,7 @@ import androidx.navigation.NavDirections
 import androidx.navigation.fragment.findNavController
 import com.bumptech.glide.Glide
 import com.google.android.material.snackbar.Snackbar
+import com.sample.basicconfigapp.utils.callbacks.ClickHelper
 import com.sample.basicconfigapp.viewmodel.BaseViewModel
 import java.util.logging.Logger
 
@@ -180,13 +181,13 @@ abstract class BaseFragment : Fragment(), ClickHelper {
 
 
     private fun openSettings(): Boolean {
-        val intent = Intent(
-            Settings.ACTION_APPLICATION_DETAILS_SETTINGS,
-            Uri.fromParts("package", BuildConfig.APPLICATION_ID, null)
-        )
-        intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
-        startActivity(intent)
-        activity?.finish()
+//        val intent = Intent(
+//            Settings.ACTION_APPLICATION_DETAILS_SETTINGS,
+//            Uri.fromParts("package", BuildConfig.APPLICATION_ID, null)
+//        )
+//        intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
+//        startActivity(intent)
+//        activity?.finish()
         return true
     }
 

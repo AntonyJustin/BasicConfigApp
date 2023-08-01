@@ -1,4 +1,4 @@
-package com.sample.basicconfigapp.util.callbacks
+package com.sample.basicconfigapp.utils.callbacks
 
 import android.view.View
 

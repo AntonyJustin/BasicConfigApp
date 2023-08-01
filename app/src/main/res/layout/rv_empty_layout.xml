@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+
+        <variable
+            name="data"
+            type="com.sample.basicconfigapp.model.CountryListDetails" />
+
+        <variable
+            name="clickHelper"
+            type="com.sample.basicconfigapp.utils.callbacks.ClickHelper" />
+        <variable
+            name="fr"
+            type="com.sample.basicconfigapp.view.fragment.CountryListFragment" />
+    </data>
+
+
+<LinearLayout
+    android:id="@+id/toolbar"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    app:contentInsetLeft="24dp"
+    app:contentInsetStart="24dp"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+   >
+
+
+
+</LinearLayout>
+
+</layout>

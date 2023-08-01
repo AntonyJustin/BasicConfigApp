@@ -1,4 +1,4 @@
-package com.sample.basicconfigapp.util.internet
+package com.sample.basicconfigapp.utils.internet
 
 import android.content.BroadcastReceiver
 import android.content.Context
